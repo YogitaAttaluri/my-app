@@ -22,17 +22,57 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 20px;
+  /* Added padding for better spacing */
+  box-sizing: border-box;
+  /* Ensures padding is included in element's total width and height */
 }
 
 .App-link {
   color: #61dafb;
+  text-decoration: none;
+  /* Remove underline for a cleaner look */
+  transition: color 0.3s;
+  /* Smooth transition for color changes */
+}
+
+.App-link:hover,
+.App-link:focus {
+  color: #21a1f1;
+  /* Slight color change on hover or focus */
 }
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Ensure better accessibility and responsiveness */
+@media (max-width: 768px) {
+  .App-logo {
+    height: 50vmin;
+    /* Adjust size for smaller screens */
+  }
+
+  .App-header {
+    font-size: calc(12px + 2vmin);
+    /* Slightly larger font for readability on smaller screens */
+  }
+}
+
+/* High contrast mode for improved accessibility */
+@media (forced-colors: active) {
+  .App-header {
+    background-color: WindowText;
+    color: Window;
+  }
+
+  .App-link {
+    color: LinkText;
   }
 }

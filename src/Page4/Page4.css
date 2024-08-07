@@ -1,0 +1,67 @@
+.page4 {
+    height: 100vh;
+    background: url('../assets/page4_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* Align items to the top */
+    padding-left: 40vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    /* Ensures consistent padding */
+}
+
+.thankyou-message {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    font-size: 5rem;
+    animation: fadeInUp 2s ease-in-out;
+    margin-top: 30vh;
+    padding: 0 10px;
+    /* Added padding for better spacing on smaller screens */
+}
+
+.thankyou-message h1 {
+    font-size: 10rem;
+    margin: 0;
+}
+
+.thankyou-message p {
+    font-size: 4rem;
+    margin: 10px 30px 0;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .thankyou-message {
+        font-size: 3rem;
+        /* Adjust font size for smaller screens */
+        margin-top: 20vh;
+        /* Adjust margin for better alignment */
+    }
+
+    .thankyou-message h1 {
+        font-size: 6rem;
+        /* Adjust heading size for smaller screens */
+    }
+
+    .thankyou-message p {
+        font-size: 2rem;
+        /* Adjust paragraph size for smaller screens */
+    }
+}

@@ -1,0 +1,93 @@
+.video-background {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.overlay-content h1 {
+    margin: 0;
+    margin-top: 8vh;
+    margin-left: 10vh;
+    padding-top: 20px;
+    font-size: clamp(2rem, 8vw, 7.5rem);
+    /* Responsive text size */
+    text-align: left;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom: 20px;
+    margin-bottom: 20vh;
+    flex-wrap: wrap;
+    /* Allow wrapping for smaller screens */
+}
+
+h1 {
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.button-container button {
+    background: linear-gradient(90deg, #004aad, #cb6ce6);
+    width: 20vh;
+    height: 8vh;
+    border: none;
+    border-radius: 10vh;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: #fff;
+    font-size: 130%;
+    margin: 10px;
+    /* Add margin for spacing */
+}
+
+.button-container button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Ensure the video background adapts to different screen sizes */
+@media (max-width: 768px) {
+    .overlay-content h1 {
+        font-size: 5rem;
+        /* Smaller font size for mobile */
+    }
+
+    .button-container button {
+        width: 15vh;
+        height: 7vh;
+        font-size: 100%;
+    }
+}
