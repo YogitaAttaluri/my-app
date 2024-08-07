@@ -2,7 +2,7 @@
   "name": "expo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/YogitaAttaluri/my-app",
+  "homepage": "https://yogitaattaluri.github.io/my-app",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@fortawesome/free-brands-svg-icons": "^6.6.0",
